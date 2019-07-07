@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char a[110];
+    int x,lwr=0,upr=0,i;
+
+    gets(a);
+    x=strlen(a);
+    for(i=0;i<x;i++)
+    {
+        if(a[i]>= 'a' && a[i]<='z')
+            lwr++;
+        else
+            upr++;
+    }
+    if(upr>lwr)
+        printf("%s\n",strupr(a));
+    else
+        printf("%s\n",strlwr(a));
+
+
+        return 0;
+
+}
