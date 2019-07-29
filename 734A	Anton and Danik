@@ -1,0 +1,28 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    int a=0,d=0,x;
+    string m;
+    cin>>x;
+    cin>>m;
+    for(int i=0;i<x;i++)
+        {
+            if(m[i]=='A')
+                a++;
+            else if(m[i]=='D')
+                d++;
+        }
+        if(a>d)
+            cout<<"Anton"<<endl;
+        else if(d>a)
+            cout<<"Danik"<<endl;
+        else
+            cout<<"Friendship"<<endl;
+
+
+
+
+    return 0;
+}
