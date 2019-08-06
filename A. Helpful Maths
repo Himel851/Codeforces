@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+
+{
+    int l;
+    string a;
+    cin>>a;
+    l=a.length();
+    int x=l/2;
+    sort(a.begin(),a.end());
+    for(int i=x;i<l;i++)
+    {
+        cout<<a[i];
+        if(i==l-1)
+        {
+            cout<<endl;
+            return 0;
+        }
+        cout<<'+';
+    }
+    return 0;
+}
