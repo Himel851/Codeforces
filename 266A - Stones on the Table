@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int x,count=0;
+    string a;
+    cin>>x>>a;
+    for(int i=0;i<a.length()-1;i++)
+    {
+        if(a[i]==a[i+1])
+            count++;
+    }
+    cout<<count<<endl;
+    return 0;
+}
