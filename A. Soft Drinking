@@ -1,0 +1,18 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int n,k,l,c,d,p,nl,np,a[5];
+    cin>>n>>k>>l>>c>>d>>p>>nl>>np;
+
+    a[0]=((k*l)/nl)/n;
+    a[1]=c*d/n;
+    a[2]=(p/np)/n;
+
+    sort(a,a+3);
+    cout<<a[0];
+
+    return 0;
+}
