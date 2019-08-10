@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int mht,i,x,y,m=0,c=0,e=0;
+    scanf("%d",&mht);
+    for(i=0;i<mht;i++)
+    {
+        scanf("%d %d",&x,&y);
+        if(x>y)
+            m++;
+        else if(x<y)
+            c++;
+        else
+            e++;
+    }
+    if(m>c)
+        printf("Mishka\n");
+    else if(m<c)
+        printf("Chris\n");
+    else
+        printf("Friendship is magic!^^\n");
+
+    return 0;
+}
