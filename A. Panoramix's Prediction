@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,m,prime;
+    cin>>n>>m;
+
+    while(n++)
+    {
+        prime=0;
+        for(int j=2;j<=n/2;j++)
+        {
+            if(n%j==0)
+            {
+                prime++;
+                break;
+            }
+        }
+        if(prime==0)
+        {
+            if(n==m)
+            {
+               cout<<"YES"<<endl;
+               return 0;
+            }
+            else
+            {
+                cout<<"NO"<<endl;
+                return 0;
+            }
+        }
+    }
+}
