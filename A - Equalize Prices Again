@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   int t1,t2,x,a[100000],sum,ans;
+   cin>>t1;
+   for(int i=1;i<=t1;i++)
+   {
+       sum=0,ans=0;
+       cin>>t2;
+       for(int j=0;j<t2;j++)
+       {
+           cin>>a[j];
+           sum=sum+a[j];
+       }
+       ans=sum/t2;
+       if(sum%t2!=0)
+        ans++;
+
+       cout<<ans<<endl;
+   }
+
+
+}
+
