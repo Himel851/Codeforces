@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x,y,i,m,a[100000],j=0;
+    cin>>x>>y;
+    for(i=x;i<=y;i++)
+    {
+        m=i;
+        j=-1;
+        while(m!=0)
+        {
+            j++;
+            a[j]=m%10;
+            m=m/10;
+        }
+        sort(a,a+(j+1));
+        int count=1;
+        for(int k=0;k<j;k++)
+        {
+            if(a[k]==a[k+1])
+               break;
+            else
+                count++;
+        }
+        if(count==j+1)
+        {
+            cout<<i<<endl;
+            return 0;
+        }
+
+
+    }
+    cout<<"-1"<<endl;
+    return 0;
+}
