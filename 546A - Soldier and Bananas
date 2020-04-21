@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+    int k,n,w,sum=0,ans;
+    cin>>k>>n>>w;
+    {
+        for(int i=1;i<=w;i++)
+        {
+            sum=sum+(i*k);
+        }
+        ans=sum-n;
+        if(ans<0)
+            ans=0;
+        cout<<ans<<endl;
+    }
+
+
+    return 0;
+}
+
