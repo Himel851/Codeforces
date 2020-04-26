@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,n,a,b,c,d;
+    cin>>t;
+    {
+        while(t--)
+        {
+            int min,max;
+            cin>>n>>a>>b>>c>>d;
+            min=(a-b)*n;
+            max=(a+b)*n;
+            if(min>(c+d) || max<(c-d))
+                cout<<"No"<<endl;
+            else
+                cout<<"Yes"<<endl;
+
+        }
+    }
+}
