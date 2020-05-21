@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long  t,a,b,i,j;
+    cin>>t;
+    while(t--)
+    {
+        cin>>a>>b;
+        for(i=1;i<b;i++)
+        {
+            long long m,r,maximum=0,minimum=9;
+            m=a;
+            while(m)
+            {
+                r=m%10;
+                maximum=max(r,maximum);
+                minimum=min(r,minimum);
+                m=m/10;
+            }
+            if(minimum==0)break;
+            else
+                a=a+maximum*minimum;
+        }
+        cout<<a<<endl;
+    }
+}
